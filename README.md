@@ -38,19 +38,17 @@ Binary search tree complexity of 10000 elements = $0(log_2(10000)) = 13.288$
 
 Using division you would find that 5/9.966 = x/13.288 => 66.439 = 9.966x => 6.666 = x. Using this logic you would find it would take around 7 seconds to find the same element in a binary tree of 10000 elements.
 
-If you measure the time with 10,000 elements and it takes 100 seconds this could be the case given that reasonning with asymptotic complexity suggest a different time because of memory leaks, being ran on different machines, and oversized elements.
+If you measure the time with 10,000 elements and it takes 100 seconds this could be the case given that reasonning with asymptotic complexity suggest a different time because of memory leaks, being ran on different machines, and running multiple programs at once.
 
 1. The algorithm could have a memory leak we don't know about.
 If this is left unchecked we would have memory allocated for no reason to the point where it uses up all of our ram, and starts to use the hard drive for memory to run the algorithm which would cause a large hit to performance and runtime.
 If you have to use your hard drive for memory it would increase runtime.
 
-3. Running algorithms on different machines can yield different results, so this could've been ran on a different machine.
+2. Running algorithms on different machines can yield different results, so this could've been ran on a different machine.
 Different computers have different computing power, if you did the first test using a lab computer, then the second using a laptop at home, you could get different results.
 Using a machine with less computing power could increase runtime.
 
-4. The elements being to large.
-If the elements weren't just numbers or strings, but large data such as video clips.
-This would take much more time to analyize than just numbers or strings which would increase overall runtime.
+3. If the computer is running multiple programs at the same time instead of only running a single program, it would cause it to search at a slower rate since the computer is trying to run other programs instead of focusing on the one.
 
 “I certify that I have listed all sources used to complete this exercise, including the use
 of any Large Language Models. All of the work is my own, except where stated
